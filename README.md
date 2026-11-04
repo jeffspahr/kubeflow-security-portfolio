@@ -26,7 +26,7 @@ node --check app.js
 - This repository contains public evidence only. Private advisory records, comments, and aggregate activity counts are excluded. Public publication outcomes do not establish the full private triage workload.
 - The 22-advisory publication count uses `publisher.login == jeffspahr`. Fifteen carry CVE IDs, including two pre-existing CVE-2023 IDs. This is not a claim of 15 newly requested assignments.
 - Ten merged authored implementation/integration PRs are explicitly linked from eight public advisories. Original authors and reporters retain credit. Compatibility rollback #15044 is excluded.
-- “Zero fixable vulnerabilities” describes the default release gate, with explicit reviewed exceptions. It is not a guarantee of absence of all vulnerabilities. The 2.18.0 release notes disclose accepted findings.
+- The zero-fixable-CVE result for 2.17.3 and 2.18.0 is scoped to KFP-built images and SDK packages on supported Python versions newer than 3.9, at release time. Python 3.9 compatibility and images built by other projects are outside that claim and remain covered by the release security records.
 - The requested 2.18.1 retrospective treats that release as the closing milestone. The verified snapshot's latest release is 2.18.0; no unverified release date, final scan, new CVE assignment, or artifact inclusion is asserted.
 
 ## Data
