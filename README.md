@@ -1,8 +1,8 @@
-# Kubeflow Pipelines — security, from dependency to delivery
+# Jeff Spahr — Kubeflow Pipelines
 
-Jeff Spahr's contribution and security-advisory portfolio, backed by a November 4, 2026 snapshot of GitHub evidence.
+My work on Kubeflow Pipelines, using GitHub data collected on November 4, 2026.
 
-The site covers all 468 authored PRs, contribution themes, repository coverage, advisory coordination, public CVE outcomes, remediation PRs, and release qualification.
+The site lists my 468 PRs and 22 published security advisories, with charts of the work by month and repository area.
 
 ## Run locally
 
