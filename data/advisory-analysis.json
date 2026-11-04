@@ -1,0 +1,655 @@
+{
+  "asOf": "2026-11-04",
+  "repository": "kubeflow/pipelines",
+  "scope": "Published public repository advisories only. No private advisory content or comments included.",
+  "metrics": {
+    "publishedRepositoryAdvisories": 23,
+    "publishedByJeff": 22,
+    "withAssignedCvePublishedByJeff": 15,
+    "cve2026IdentifiersPublishedByJeff": 13,
+    "preexistingCve2023IdentifiersPublishedByJeff": 2,
+    "withoutCvePublishedByJeff": 7,
+    "firstPatchedVersionsPublishedByJeff": {
+      "2.18.0": 15,
+      "2.17.0": 4,
+      "2.16.1": 1,
+      "2.15.0": 1,
+      "2.0.2": 1
+    },
+    "advisoriesWithLinkedJeffImplementationOrDeliveryPr": 8,
+    "distinctLinkedJeffMergedImplementationOrDeliveryPrs": 10,
+    "linkedJeffPrNumbers": [
+      13562,
+      13677,
+      14346,
+      14352,
+      14359,
+      14362,
+      14427,
+      14655,
+      14679,
+      14706
+    ],
+    "creditedReporterAccounts": 14,
+    "advisoriesOriginallyCreatedIn2023": 4
+  },
+  "methodology": [
+    "Published count is selected by state=published; Jeff publication attribution uses publisher.login=jeffspahr, not report author.",
+    "CVE counts record non-null CVE identifiers. Public assignment metadata does not prove who submitted the CVE request. Two CVE-2023 IDs predate this work and are not new assignments.",
+    "Patched-version distribution uses advisory vulnerabilities[].patched_versions, not PR merge dates. It describes first fixed releases, not all later releases containing fixes.",
+    "Remediation/integration PR counts are a conservative explicit-link intersection: public advisory descriptions linking kubeflow/pipelines PRs, intersected with the complete jeffspahr-authored PR dataset and state MERGED.",
+    "The count includes implementation, regression coverage, backports, and necessary rollout follow-ups; it is not ten independent vulnerabilities or ten solely authored original fixes.",
+    "PR #15044 is linked by an advisory but excluded because its role is a compatibility rollback, not a new security fix.",
+    "This public dataset cannot establish the total private triage workload or a CVE-requester count. It supports 22 published advisory outcomes.",
+    "The requested 2.18.1 retrospective scenario must be labeled separately. These public advisories currently record first patches no later than 2.18.0; no hypothetical new CVEs, fixes or advisory outcomes are added."
+  ],
+  "attributionNotes": [
+    "Reporters retain discovery credit; publishing and maintaining an advisory does not imply discovery.",
+    "Vito Carolillo authored the original shared-upload authorization fix carried by Jeff in #14352 and the original namespace-cache key commit retained in #14359.",
+    "Ayush Gupta reported the metrics archive issue and completed bounds in #14186; Jeff authored earlier streaming work #13562. Ayush also authored archive fixes #14171/#14186; public advisory GHSA-8fmv-6rg5-5924 credits Jeff with regression coverage in #14171, which is not counted as a Jeff-authored PR.",
+    "Herik Webb reported and authored primary fixes for several advisories that Jeff published and/or integrated into releases. Those original PRs are not counted as Jeff-authored implementations."
+  ],
+  "advisories": [
+    {
+      "id": "GHSA-w95g-prjh-32jh",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-w95g-prjh-32jh",
+      "title": "ScheduledWorkflow controller permits cross-tenant run destination confusion",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:12Z",
+      "cve": null,
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14348
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-c53j-pv7w-x95q",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-c53j-pv7w-x95q",
+      "title": "Cross-tenant object-store credential minting through reachable KFP profile-controller webhook",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:14Z",
+      "cve": null,
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14560,
+        14562
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-m6q4-2p22-7x6f",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-m6q4-2p22-7x6f",
+      "title": "Artifact and pod-log responses can execute active content in the UI origin",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:23Z",
+      "cve": null,
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14263
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-r98w-fgcr-qc52",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-r98w-fgcr-qc52",
+      "title": "Forged or stale workflow reports can mutate runs across identity boundaries",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:19Z",
+      "cve": null,
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14262
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-x25g-w9x3-47hx",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-x25g-w9x3-47hx",
+      "title": "Legacy metrics archive decompression can exhaust the persistence agent",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:08Z",
+      "cve": null,
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "Ayush-kathil"
+      ],
+      "linkedPublicPrNumbers": [
+        13562,
+        14186
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 13562,
+          "url": "https://github.com/kubeflow/pipelines/pull/13562",
+          "title": "fix(backend) stream metrics artifact extraction",
+          "state": "MERGED",
+          "role": "Earlier streaming implementation; Ayush Gupta completed resource bounds in #14186."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-j429-j7xw-8j9h",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-j429-j7xw-8j9h",
+      "title": "Unauthenticated SSRF vulnerability in Kubeflow Pipelines TensorBoard proxy",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:50:27Z",
+      "cve": "CVE-2026-88979",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "avrlab233"
+      ],
+      "linkedPublicPrNumbers": [
+        14346,
+        14362,
+        14655,
+        14679
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 14346,
+          "url": "https://github.com/kubeflow/pipelines/pull/14346",
+          "title": "fix(frontend): harden TensorBoard proxy signing secret",
+          "state": "MERGED",
+          "role": "Primary TensorBoard signing-secret remediation."
+        },
+        {
+          "number": 14362,
+          "url": "https://github.com/kubeflow/pipelines/pull/14362",
+          "title": "fix(frontend): persist TensorBoard signing key across UI rollouts",
+          "state": "MERGED",
+          "role": "Restart-stable signing-key provisioning and rollout compatibility."
+        },
+        {
+          "number": 14655,
+          "url": "https://github.com/kubeflow/pipelines/pull/14655",
+          "title": "fix(release): consolidate remaining 2.18 backports",
+          "state": "MERGED",
+          "role": "Consolidated 2.18 backport and release integration."
+        },
+        {
+          "number": 14679,
+          "url": "https://github.com/kubeflow/pipelines/pull/14679",
+          "title": "fix(release): address 2.18 backport review follow-ups",
+          "state": "MERGED",
+          "role": "2.18 backport review follow-ups, startup/recovery guidance and compatibility."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-3pcj-8j5w-jmxq",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-3pcj-8j5w-jmxq",
+      "title": "Unauthenticated SSRF through artifact provider endpoints",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:53:46Z",
+      "cve": "CVE-2026-88981",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14349,
+        14655,
+        14679
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 14655,
+          "url": "https://github.com/kubeflow/pipelines/pull/14655",
+          "title": "fix(release): consolidate remaining 2.18 backports",
+          "state": "MERGED",
+          "role": "Consolidated 2.18 backport and release integration."
+        },
+        {
+          "number": 14679,
+          "url": "https://github.com/kubeflow/pipelines/pull/14679",
+          "title": "fix(release): address 2.18 backport review follow-ups",
+          "state": "MERGED",
+          "role": "2.18 backport review follow-ups, startup/recovery guidance and compatibility."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-v83x-544f-ph2r",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-v83x-544f-ph2r",
+      "title": "Private stored-pipeline disclosure through run and recurring-run creation",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:18Z",
+      "cve": null,
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ],
+      "linkedPublicPrNumbers": [
+        14348
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-9gj7-33j5-r3v3",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-9gj7-33j5-r3v3",
+      "title": "HTTP artifact namespace-ownership bypass through inconsistent path normalization",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:10Z",
+      "cve": null,
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "zenniskayy2k4"
+      ],
+      "linkedPublicPrNumbers": [
+        13677,
+        13683
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 13677,
+          "url": "https://github.com/kubeflow/pipelines/pull/13677",
+          "title": "fix(frontend): harden artifact request handling",
+          "state": "MERGED",
+          "role": "Artifact request hardening: HTTP destination/path validation and volume containment."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-2xwh-426q-42c5",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-2xwh-426q-42c5",
+      "title": "Cross-tenant execution-cache poisoning / output substitution via a namespace-blind cache key in the Kubeflow Pipelines cache webhook (multi-user)",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T04:20:33Z",
+      "cve": "CVE-2026-88982",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ],
+      "linkedPublicPrNumbers": [
+        14359,
+        14427
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 14359,
+          "url": "https://github.com/kubeflow/pipelines/pull/14359",
+          "title": "fix(backend): isolate legacy execution cache by namespace",
+          "state": "MERGED",
+          "role": "Namespace-isolated cache enforcement; preserves Vito Carolillo\u2019s original namespace-key commit."
+        },
+        {
+          "number": 14427,
+          "url": "https://github.com/kubeflow/pipelines/pull/14427",
+          "title": "feat(cache): standardize legacy cache audit mode",
+          "state": "MERGED",
+          "role": "Release-2.18 cache audit/enforce rollout policy."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-v3vh-xv5f-p4p4",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-v3vh-xv5f-p4p4",
+      "title": "Unauthenticated server-side request forgery in Kubeflow Pipelines frontend http/https artifact source via decimal-IP bypass of the bucket validator",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:56:10Z",
+      "cve": "CVE-2026-88980",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ],
+      "linkedPublicPrNumbers": [
+        13677,
+        14655,
+        14706,
+        15044
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 13677,
+          "url": "https://github.com/kubeflow/pipelines/pull/13677",
+          "title": "fix(frontend): harden artifact request handling",
+          "state": "MERGED",
+          "role": "Artifact request hardening: HTTP destination/path validation and volume containment."
+        },
+        {
+          "number": 14655,
+          "url": "https://github.com/kubeflow/pipelines/pull/14655",
+          "title": "fix(release): consolidate remaining 2.18 backports",
+          "state": "MERGED",
+          "role": "Consolidated 2.18 backport and release integration."
+        },
+        {
+          "number": 14706,
+          "url": "https://github.com/kubeflow/pipelines/pull/14706",
+          "title": "fix(frontend): preserve artifact authorization through serving and redirects in 2.18",
+          "state": "MERGED",
+          "role": "2.18 artifact serving and redirect authorization follow-up."
+        }
+      ],
+      "excludedJeffPrLinks": [
+        {
+          "number": 15044,
+          "url": "https://github.com/kubeflow/pipelines/pull/15044",
+          "reason": "Compatibility rollback: deferred stricter artifact ownership enforcement, not counted as a new security fix."
+        }
+      ]
+    },
+    {
+      "id": "GHSA-rjr3-43j3-4q8g",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-rjr3-43j3-4q8g",
+      "title": "Missing authorization on shared (empty-namespace) pipeline uploads in the Kubeflow Pipelines API server allows cross-tenant pipeline-version injection and code execution in other tenants' runs",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:57:56Z",
+      "cve": "CVE-2026-77596",
+      "severity": "critical",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ],
+      "linkedPublicPrNumbers": [
+        14352,
+        14655
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 14352,
+          "url": "https://github.com/kubeflow/pipelines/pull/14352",
+          "title": "fix(backend): authorize shared pipeline uploads",
+          "state": "MERGED",
+          "role": "Public remediation PR carrying Vito Carolillo\u2019s original authorization fix, with Jeff\u2019s regression coverage and follow-ups."
+        },
+        {
+          "number": 14655,
+          "url": "https://github.com/kubeflow/pipelines/pull/14655",
+          "title": "fix(release): consolidate remaining 2.18 backports",
+          "state": "MERGED",
+          "role": "Consolidated 2.18 backport and release integration."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-2fg9-fx2f-439r",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-2fg9-fx2f-439r",
+      "title": "Volume artifact path traversal permits disclosure of process-readable files",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:25Z",
+      "cve": "CVE-2026-118758",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "johanwahyudi"
+      ],
+      "linkedPublicPrNumbers": [
+        13677
+      ],
+      "jeffPrContributions": [
+        {
+          "number": 13677,
+          "url": "https://github.com/kubeflow/pipelines/pull/13677",
+          "title": "fix(frontend): harden artifact request handling",
+          "state": "MERGED",
+          "role": "Artifact request hardening: HTTP destination/path validation and volume containment."
+        }
+      ],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-f7vj-6669-qvv4",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-f7vj-6669-qvv4",
+      "title": "Authenticated SSRF in Kubeflow Pipelines \u2014 API server fetches a caller-supplied pipelineURL without host validation",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:27:06Z",
+      "cve": "CVE-2026-88983",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "gasbugs"
+      ],
+      "linkedPublicPrNumbers": [
+        12750
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-gqww-5pj5-8fq7",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-gqww-5pj5-8fq7",
+      "title": "Unauthenticated SSRF and HTTP smuggling in Kubeflow Pipelines frontend /_proxy/ route, bypasses ENABLE_AUTHZ=true",
+      "publisher": "droctothorpe",
+      "publishedAt": "2026-07-12T02:53:23Z",
+      "cve": "CVE-2026-54745",
+      "severity": "critical",
+      "firstPatchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ],
+      "linkedPublicPrNumbers": [],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-ghgh-57qv-h687",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-ghgh-57qv-h687",
+      "title": "RBAC bypass on shared pipelines allows any authenticated user to delete or modify global pipelines",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:29:10Z",
+      "cve": "CVE-2026-88984",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.16.1"
+      ],
+      "reporters": [
+        "brodmart"
+      ],
+      "linkedPublicPrNumbers": [
+        13288
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-wg5q-x4j9-qm54",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-wg5q-x4j9-qm54",
+      "title": "Run-log endpoint permits unauthorized access to pod logs",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:21Z",
+      "cve": "CVE-2026-118759",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "bugbunny-research"
+      ],
+      "linkedPublicPrNumbers": [
+        13684
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-8fmv-6rg5-5924",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-8fmv-6rg5-5924",
+      "title": "Pipeline archive upload allows decompression bomb to exhaust server memory",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:16Z",
+      "cve": "CVE-2026-118761",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "bugbunny-research"
+      ],
+      "linkedPublicPrNumbers": [
+        14171,
+        14186
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-vjhf-6c8f-qhwj",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-vjhf-6c8f-qhwj",
+      "title": "Missing namespace authorization permits cross-tenant artifact reads in Kubeflow Pipelines frontend",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:27Z",
+      "cve": "CVE-2026-118760",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "cyberboar84"
+      ],
+      "linkedPublicPrNumbers": [
+        12860
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-r4mx-2gr2-8277",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-r4mx-2gr2-8277",
+      "title": "SQL injection through unvalidated pagination tokens in Kubeflow Pipelines API server",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:31:43Z",
+      "cve": "CVE-2026-88985",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "phisch1991",
+        "k0rti"
+      ],
+      "linkedPublicPrNumbers": [
+        13127
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-g3qx-frcg-j979",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-g3qx-frcg-j979",
+      "title": "Reflected XSS in Kubeflow Pipelines frontend pod information and events error responses",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:30:38Z",
+      "cve": "CVE-2026-88986",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.15.0"
+      ],
+      "reporters": [
+        "pwny0"
+      ],
+      "linkedPublicPrNumbers": [
+        9844,
+        12295
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-895m-3hxm-h4mg",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-895m-3hxm-h4mg",
+      "title": "Namespace-based SSRF in Kubeflow Pipelines frontend artifact proxy",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-08T22:19:48Z",
+      "cve": "CVE-2023-6570",
+      "severity": "high",
+      "firstPatchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "DanMcInerney"
+      ],
+      "linkedPublicPrNumbers": [
+        9844,
+        13126
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    },
+    {
+      "id": "GHSA-j9xw-rrjg-2p9r",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-j9xw-rrjg-2p9r",
+      "title": "Reflected XSS through the artifact source parameter in Kubeflow Pipelines frontend",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-08T22:20:15Z",
+      "cve": "CVE-2023-6571",
+      "severity": "medium",
+      "firstPatchedVersions": [
+        "2.0.2"
+      ],
+      "reporters": [
+        "DanMcInerney"
+      ],
+      "linkedPublicPrNumbers": [
+        9844
+      ],
+      "jeffPrContributions": [],
+      "excludedJeffPrLinks": []
+    }
+  ]
+}

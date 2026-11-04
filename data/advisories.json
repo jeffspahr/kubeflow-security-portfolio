@@ -1,0 +1,328 @@
+{
+  "asOf": "2026-11-04",
+  "advisories": [
+    {
+      "id": "GHSA-w95g-prjh-32jh",
+      "cve": null,
+      "title": "ScheduledWorkflow controller permits cross-tenant run destination confusion",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-w95g-prjh-32jh",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:12Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-c53j-pv7w-x95q",
+      "cve": null,
+      "title": "Cross-tenant object-store credential minting through reachable KFP profile-controller webhook",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-c53j-pv7w-x95q",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:14Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-m6q4-2p22-7x6f",
+      "cve": null,
+      "title": "Artifact and pod-log responses can execute active content in the UI origin",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-m6q4-2p22-7x6f",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:23Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-r98w-fgcr-qc52",
+      "cve": null,
+      "title": "Forged or stale workflow reports can mutate runs across identity boundaries",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-r98w-fgcr-qc52",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:19Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-x25g-w9x3-47hx",
+      "cve": null,
+      "title": "Legacy metrics archive decompression can exhaust the persistence agent",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-x25g-w9x3-47hx",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:08Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "Ayush-kathil"
+      ]
+    },
+    {
+      "id": "GHSA-j429-j7xw-8j9h",
+      "cve": "CVE-2026-88979",
+      "title": "Unauthenticated SSRF vulnerability in Kubeflow Pipelines TensorBoard proxy",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-j429-j7xw-8j9h",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:50:27Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "avrlab233"
+      ]
+    },
+    {
+      "id": "GHSA-3pcj-8j5w-jmxq",
+      "cve": "CVE-2026-88981",
+      "title": "Unauthenticated SSRF through artifact provider endpoints",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-3pcj-8j5w-jmxq",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:53:46Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-v83x-544f-ph2r",
+      "cve": null,
+      "title": "Private stored-pipeline disclosure through run and recurring-run creation",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-v83x-544f-ph2r",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:18Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "herikwebb"
+      ]
+    },
+    {
+      "id": "GHSA-9gj7-33j5-r3v3",
+      "cve": null,
+      "title": "HTTP artifact namespace-ownership bypass through inconsistent path normalization",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-9gj7-33j5-r3v3",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:10Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "zenniskayy2k4"
+      ]
+    },
+    {
+      "id": "GHSA-2xwh-426q-42c5",
+      "cve": "CVE-2026-88982",
+      "title": "Cross-tenant execution-cache poisoning / output substitution via a namespace-blind cache key in the Kubeflow Pipelines cache webhook (multi-user)",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-2xwh-426q-42c5",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T04:20:33Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ]
+    },
+    {
+      "id": "GHSA-v3vh-xv5f-p4p4",
+      "cve": "CVE-2026-88980",
+      "title": "Unauthenticated server-side request forgery in Kubeflow Pipelines frontend http/https artifact source via decimal-IP bypass of the bucket validator",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-v3vh-xv5f-p4p4",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:56:10Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ]
+    },
+    {
+      "id": "GHSA-rjr3-43j3-4q8g",
+      "cve": "CVE-2026-77596",
+      "title": "Missing authorization on shared (empty-namespace) pipeline uploads in the Kubeflow Pipelines API server allows cross-tenant pipeline-version injection and code execution in other tenants' runs",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-rjr3-43j3-4q8g",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-28T03:57:56Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ]
+    },
+    {
+      "id": "GHSA-2fg9-fx2f-439r",
+      "cve": "CVE-2026-118758",
+      "title": "Volume artifact path traversal permits disclosure of process-readable files",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-2fg9-fx2f-439r",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:25Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "johanwahyudi"
+      ]
+    },
+    {
+      "id": "GHSA-f7vj-6669-qvv4",
+      "cve": "CVE-2026-88983",
+      "title": "Authenticated SSRF in Kubeflow Pipelines \u2014 API server fetches a caller-supplied pipelineURL without host validation",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-f7vj-6669-qvv4",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:27:06Z",
+      "patchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "gasbugs"
+      ]
+    },
+    {
+      "id": "GHSA-gqww-5pj5-8fq7",
+      "cve": "CVE-2026-54745",
+      "title": "Unauthenticated SSRF and HTTP smuggling in Kubeflow Pipelines frontend /_proxy/ route, bypasses ENABLE_AUTHZ=true",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-gqww-5pj5-8fq7",
+      "publisher": "droctothorpe",
+      "publishedAt": "2026-07-12T02:53:23Z",
+      "patchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "VitoCrl"
+      ]
+    },
+    {
+      "id": "GHSA-ghgh-57qv-h687",
+      "cve": "CVE-2026-88984",
+      "title": "RBAC bypass on shared pipelines allows any authenticated user to delete or modify global pipelines",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-ghgh-57qv-h687",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:29:10Z",
+      "patchedVersions": [
+        "2.16.1"
+      ],
+      "reporters": [
+        "brodmart"
+      ]
+    },
+    {
+      "id": "GHSA-wg5q-x4j9-qm54",
+      "cve": "CVE-2026-118759",
+      "title": "Run-log endpoint permits unauthorized access to pod logs",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-wg5q-x4j9-qm54",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:21Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "bugbunny-research"
+      ]
+    },
+    {
+      "id": "GHSA-8fmv-6rg5-5924",
+      "cve": "CVE-2026-118761",
+      "title": "Pipeline archive upload allows decompression bomb to exhaust server memory",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-8fmv-6rg5-5924",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:16Z",
+      "patchedVersions": [
+        "2.18.0"
+      ],
+      "reporters": [
+        "bugbunny-research"
+      ]
+    },
+    {
+      "id": "GHSA-vjhf-6c8f-qhwj",
+      "cve": "CVE-2026-118760",
+      "title": "Missing namespace authorization permits cross-tenant artifact reads in Kubeflow Pipelines frontend",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-vjhf-6c8f-qhwj",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-10-29T04:44:27Z",
+      "patchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "cyberboar84"
+      ]
+    },
+    {
+      "id": "GHSA-r4mx-2gr2-8277",
+      "cve": "CVE-2026-88985",
+      "title": "SQL injection through unvalidated pagination tokens in Kubeflow Pipelines API server",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-r4mx-2gr2-8277",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:31:43Z",
+      "patchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "phisch1991",
+        "k0rti"
+      ]
+    },
+    {
+      "id": "GHSA-g3qx-frcg-j979",
+      "cve": "CVE-2026-88986",
+      "title": "Reflected XSS in Kubeflow Pipelines frontend pod information and events error responses",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-g3qx-frcg-j979",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-14T23:30:38Z",
+      "patchedVersions": [
+        "2.15.0"
+      ],
+      "reporters": [
+        "pwny0"
+      ]
+    },
+    {
+      "id": "GHSA-895m-3hxm-h4mg",
+      "cve": "CVE-2023-6570",
+      "title": "Namespace-based SSRF in Kubeflow Pipelines frontend artifact proxy",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-895m-3hxm-h4mg",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-08T22:19:48Z",
+      "patchedVersions": [
+        "2.17.0"
+      ],
+      "reporters": [
+        "DanMcInerney"
+      ]
+    },
+    {
+      "id": "GHSA-j9xw-rrjg-2p9r",
+      "cve": "CVE-2023-6571",
+      "title": "Reflected XSS through the artifact source parameter in Kubeflow Pipelines frontend",
+      "url": "https://github.com/kubeflow/pipelines/security/advisories/GHSA-j9xw-rrjg-2p9r",
+      "publisher": "jeffspahr",
+      "publishedAt": "2026-09-08T22:20:15Z",
+      "patchedVersions": [
+        "2.0.2"
+      ],
+      "reporters": [
+        "DanMcInerney"
+      ]
+    }
+  ]
+}
