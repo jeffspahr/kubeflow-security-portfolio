@@ -1,4 +1,4 @@
-# Jeff Spahr — Kubeflow Pipelines
+# Jeff Spahr: Kubeflow Pipelines
 
 My work on Kubeflow Pipelines, using GitHub data collected on November 4, 2026.
 
